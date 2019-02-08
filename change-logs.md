@@ -45,6 +45,7 @@
 *Fix memory leak in Mass Storage
 *Alucard, LazyPlug & Mako Hotplugging
 *Enabled VNSWAP
+*Added "SmartPack" Modified MSM-Thermal Engine
 *Added back Intellithermal V.2 Thermal Engine (for those who prefer it)
 *Compatible With Kernel Auditor & Should Be Compatible SmartPack-Kernel Manager
 ** Much More I'm Forgetting
