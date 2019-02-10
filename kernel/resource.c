@@ -90,13 +90,14 @@ static int r_show(struct seq_file *m, void *v)
 
 	for (depth = 0, p = r; depth < MAX_IORES_LEVEL; depth++, p = p->parent)
 		if (p->parent == root)
+                break;
 
     if (capable(CAP_SYS_ADMIN)) {
 		start = r->start;
 		end = r->end;
 	} else {
 		start = end = 0;
-	}			break;
+	}			
 
 	seq_printf(m, "%*s%0*llx-%0*llx : %s\n",
 			depth * 2, "",
