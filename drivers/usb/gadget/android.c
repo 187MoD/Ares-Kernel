@@ -2275,8 +2275,8 @@ static void mass_storage_function_cleanup(struct android_usb_function *f)
 
     config = f->config;
     fsg_common_put(config->common);
-	kfree(f->config);
-	f->config = NULL;
+	    kfree(f->config);
+	    f->config = NULL;
 }
 
 static int mass_storage_function_bind_config(struct android_usb_function *f,
