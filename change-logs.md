@@ -2,7 +2,7 @@
 
 ## Alpha-v1.0 February 7. 2019
 -Initial Merge of SmartPack/Venom Sources
-*Synced With the latest LineageOS Sources as of 02.07.19
+*Synced With the latest LineageOS Sources as of 02.12.19
 *Built with Latest 8.2.1 toolchain using SunilPaulMathews build Framework
 *Enable OC to 2995:
   -DISCLAIMER: (You Must Adjust Voltages for you OWN specific device on higher OC steps. I AM NOT RESPOSIBLE FOR YOUR DEVICE)
