@@ -47,6 +47,7 @@
 *Enabled VNSWAP
 *Added back Intellithermal V.2 Thermal Engine (for those who prefer it)
 *Compatible With Kernel Auditor & Should Be Compatible SmartPack-Kernel Manager
+*Modified LowMemoryKiller (fbs)
 ** Much More I'm Forgetting
 
 # 
