@@ -1,9 +1,12 @@
 # Change-logs
+# -Ares-Kernel
 
-## Alpha-v1.0 February 7. 2019
+## Beta-v1.0 February 13. 2019
+##
 -Initial Merge of SmartPack/Venom Sources
-*Synced With the latest LineageOS Sources as of 02.12.19
+*Synced With latest LineageOS Sources as of 02.13.19
 *Built with Latest 8.2.1 toolchain using SunilPaulMathews build Framework
+*Compatible With Kernel Auditor & Should Be Compatible SmartPack-Kernel Manager
 *Enable OC to 2995:
   -DISCLAIMER: (You Must Adjust Voltages for you OWN specific device on higher OC steps. I AM NOT RESPOSIBLE FOR YOUR DEVICE)
 *Boeffla Sound
@@ -46,18 +49,18 @@
 *Alucard, LazyPlug & Mako Hotplugging
 *Enabled VNSWAP
 *Added back Intellithermal V.2 Thermal Engine (for those who prefer it)
-*Compatible With Kernel Auditor & Should Be Compatible SmartPack-Kernel Manager
-*Modified LowMemoryKiller (fbs)
+*Modified LowMemoryKiller (fbs) 
+*
 ** Much More I'm Forgetting
-
-# 
+#                                
 # All Changes
 # Signed Off
 # By
 # The~Skater~187
-
+# 
 ###############################################################################
-# All Prior "SmartPack" updates applied prior to my take over of this project #
+# All Prior "SmartPack" updates Applied Prior To My Take Over Of This Project #
+#     Are Listed In The Log File Below (Provided By SunilPaulMathew)          #
 ###############################################################################
 
 ## 30. November 27, 2018
