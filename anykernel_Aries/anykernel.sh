@@ -1,5 +1,5 @@
 #
-# Aries-Kernel (AnyKernel) Script
+# Ares-Kernel (AnyKernel) Script
 #
 # Credits: osm0sis @ xda-developers
 #
@@ -9,7 +9,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Aries Kernel by he~Skater~187@xda-developers.com
+kernel.string=Ares Kernel by The~Skater~187@xda-developers.com
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
@@ -62,7 +62,7 @@ case "$android_ver" in
 esac;
 ui_print " ";
 if [ ! "$support_status" == "supported" ]; then
-  ui_print "This version of Aries-Kernel is only compatible with android versions 8.1.0 & 9!";
+  ui_print "This version of Ares-Kernel is only compatible with android versions 8.1.0 & 9!";
   exit 1;
 fi;
 
@@ -72,18 +72,18 @@ dump_boot;
 
 # init.rc
 backup_file init.rc;
-grep "import /init.Aries.rc" init.rc >/dev/null || sed -i '1,/.*import.*/s/.*import.*/import \/init.Aries.rc\n&/' init.rc
+grep "import /init.Ares.rc" init.rc >/dev/null || sed -i '1,/.*import.*/s/.*import.*/import \/init.Ares.rc\n&/' init.rc
 
  # init.qcom.rc
 backup_file init.qcom.rc;
 remove_line init.qcom.rc "start mpdecision";
-insert_line init.qcom.rc "u:r:supersu:s0 root root -- /init.Aries.sh" after "Post boot services" "    exec u:r:supersu:s0 root root -- /init.Aries.sh"
-insert_line init.qcom.rc "u:r:magisk:s0 root root -- /init.Aries.sh" after "Post boot services" "    exec u:r:magisk:s0 root root -- /init.Aries.sh"
-insert_line init.qcom.rc "u:r:su:s0 root root -- /init.Aries.sh" after "Post boot services" "    exec u:r:su:s0 root root -- /init.Aries.sh"
-insert_line init.qcom.rc "u:r:init:s0 root root -- /init.Aries.sh" after "Post boot services" "    exec u:r:init:s0 root root -- /init.Aries.sh"
-insert_line init.qcom.rc "u:r:supersu:s0 root root -- /init.Aries.sh" after "Post boot services" "    exec u:r:supersu:s0 root root -- /init.Aries.sh"
-insert_line init.qcom.rc "root root -- /init.Aries.sh" after "Post boot services" "    exec u:r:supersu:s0 root root -- /init.Aries.sh"
-insert_line init.qcom.rc "Execute Aries boot script..." after "Post boot services" "    # Execute Aries boot script..."
+insert_line init.qcom.rc "u:r:supersu:s0 root root -- /init.Ares.sh" after "Post boot services" "    exec u:r:supersu:s0 root root -- /init.Ares.sh"
+insert_line init.qcom.rc "u:r:magisk:s0 root root -- /init.Ares.sh" after "Post boot services" "    exec u:r:magisk:s0 root root -- /init.Ares.sh"
+insert_line init.qcom.rc "u:r:su:s0 root root -- /init.Ares.sh" after "Post boot services" "    exec u:r:su:s0 root root -- /init.Ares.sh"
+insert_line init.qcom.rc "u:r:init:s0 root root -- /init.Ares.sh" after "Post boot services" "    exec u:r:init:s0 root root -- /init.Ares.sh"
+insert_line init.qcom.rc "u:r:supersu:s0 root root -- /init.Ares.sh" after "Post boot services" "    exec u:r:supersu:s0 root root -- /init.Ares.sh"
+insert_line init.qcom.rc "root root -- /init.Ares.sh" after "Post boot services" "    exec u:r:supersu:s0 root root -- /init.Ares.sh"
+insert_line init.qcom.rc "Execute Ares boot script..." after "Post boot services" "    # Execute Ares boot script..."
 replace_string init.qcom.rc "setprop sys.io.scheduler zen" "setprop sys.io.scheduler bfq" "setprop sys.io.scheduler zen";
 
 # init.tuna.rc
