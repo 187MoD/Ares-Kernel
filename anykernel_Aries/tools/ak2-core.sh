@@ -126,7 +126,7 @@ unpack_ramdisk() {
     ui_print "Updating over $(cat $ramdisk/version)...";
     ui_print " ";
   else
-    ui_print "Installing Aries-Kernel...";
+    ui_print "Installing Ares-Kernel...";
     ui_print " ";
   fi
 
